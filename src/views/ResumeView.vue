@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <!-- TO DO : create real resume page -->
   <Resume />
 </template>
 
