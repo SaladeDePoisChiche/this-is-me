@@ -7,7 +7,7 @@ import vuetify from "vite-plugin-vuetify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/this-is-me/',
+  base:'/',
   //base: process.env.NODE_ENV === "production" ? "/ThisIsMe/" : "/",
   plugins: [vue(), vueJsx(), vuetify({ autoImport: true })],
   resolve: {
