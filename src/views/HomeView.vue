@@ -23,8 +23,14 @@
         <v-btn class="mb-8" href="resume.pdf" target="_blank" variant="text">Resume</v-btn>
         <v-btn href="https://www.linkedin.com/in/soledad-cot/" target="_blank" variant="text">Linkedin</v-btn>
         <v-btn href="https://github.com/SaladeDePoisChiche" target="_blank" variant="text">Github</v-btn>
-        <!-- TO DO : ADD POP UP SAYING SORRY-->
-        <v-btn variant="text">Know Me Personally</v-btn>
+        <v-btn variant="text">
+          Know Me Personally
+          <v-tooltip activator="parent" location="bottom">
+            Sorry ! This page is under construction...<br>
+            But feel free to contact me ;)
+          </v-tooltip>
+        </v-btn>
+
       </v-col>
     </v-row>
 

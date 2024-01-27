@@ -47,14 +47,3 @@ console.log("skilltablecell: " + skillTableCell.value);
 </template>
 
 <style></style>
-
-                <!-- <th class="text-center">I have my way around with a few tools :
-                    Here are the languages that I have worked with :
-                </th> -->
-
-
-    <!-- <v-row>
-      <v-col>Java C++</v-col>
-      <v-col>Angular Vue</v-col>
-      <v-col>Git Docker Jenkins</v-col>
-    </v-row> -->
