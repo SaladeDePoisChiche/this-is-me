@@ -25,11 +25,6 @@ const skillStore = skillTableInfo();
       <SkillTable class="mr-5" header="Here are the languages that I have worked with:" :items="skillStore.languages" />
       <SkillTable header="I have my way around with a few tools:" :items="skillStore.tools" />
     </v-row>
-    <!-- <v-row>
-      <v-col>Java C++</v-col>
-      <v-col>Angular Vue</v-col>
-      <v-col>Git Docker Jenkins</v-col> >>>>>>>20.5em !important
-    </v-row> -->
     <v-row class="mt-10">
       I also speak french and english.
     </v-row>
