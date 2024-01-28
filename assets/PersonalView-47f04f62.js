@@ -1,0 +1,1 @@
+import{aa as e,W as s,a0 as o,Z as t}from"./index-220ac892.js";const a={},_={class:"about"},n=t("h1",null,"This is my awesome page",-1),c=[n];function r(i,l){return s(),o("div",_,c)}const u=e(a,[["render",r]]);export{u as default};
