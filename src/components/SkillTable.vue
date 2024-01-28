@@ -10,7 +10,7 @@ const props = defineProps({
 }
 );
 
-const skillTableCell = computed(() => {
+const skillTableColumns = computed(() => {
 
     const tableCell = []
     for (let i = 0; i < props.items.length; i += 2) {
@@ -25,8 +25,8 @@ const skillTableCell = computed(() => {
     //     return accumulator;
     // }, [])
 })
-console.log("skilltablecell length: " + skillTableCell.value.length);
-console.log("skilltablecell: " + skillTableCell.value);
+console.log("skilltablecell length: " + skillTableColumns.value.length);
+console.log("skilltablecell: " + skillTableColumns.value);
 </script>
 
 <template>
@@ -38,12 +38,26 @@ console.log("skilltablecell: " + skillTableCell.value);
                 </tr>
             </thead>
             <tbody>
-                <tr v-if="skillTableCell.length" class="text-center" v-for="(item, currentIndex) in skillTableCell[0]">
-                    {{item}} {{skillTableCell[1][currentIndex]}}
-                </tr>
+                <div class="container" v-if="skillTableColumns.length">
+                    <div class="col" v-for="column in skillTableColumns">
+                        <div v-for="item in column"> {{ item }}</div>
+                    </div>
+                </div>
             </tbody>
         </v-table>
     </v-card>
 </template>
 
-<style></style>
+<style>
+.container {
+    display: flex;
+}
+
+.col {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+</style>

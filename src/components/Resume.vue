@@ -21,13 +21,13 @@ const skillStore = skillTableInfo();
       </div>
     </v-row>
 
-    <v-row justify="center">
+    <v-row justify="center" class="mb-10">
       <SkillTable class="mr-5" header="Here are the languages that I have worked with:" :items="skillStore.languages" />
       <SkillTable header="I have my way around with a few tools:" :items="skillStore.tools" />
     </v-row>
-    <v-row class="mt-10">
+    <!-- <v-row class="mt-10">
       I also speak french and english.
-    </v-row>
+    </v-row> -->
 
     <v-row>
       <v-col id="leftColumn" class="leftColumn">

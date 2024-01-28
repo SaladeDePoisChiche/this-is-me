@@ -32,6 +32,6 @@ export const useResume = defineStore("resume", () => {
 
 export const skillTableInfo = defineStore("skillTableInfo", () => {
   const languages = ["Java", "C++", "Angular", "Vue"];
-  const tools = ["Spring, bootstrap", "Jenkins, CI/CD, Kubernetes"];
+  const tools = ["Spring", "Bootstrap", "Jenkins", "Gitlab CI/CD", "Kubernetes"];
   return { languages, tools };
 });
