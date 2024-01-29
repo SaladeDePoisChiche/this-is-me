@@ -1,12 +1,13 @@
 <script setup lang="ts">
-  import Resume from '../components/Resume.vue';
+import SkillTable from '../components/SkillTable.vue';
+import Experiences from '../components/Experiences.vue';
+import ResumeHeader from '../components/ResumeHeader.vue';
 </script>
 
 <template>
-  <!-- TO DO : create real resume page -->
-  <Resume />
+    <ResumeHeader />
+    <SkillTable />
+    <Experiences />
 </template>
 
-<style>
-
-</style>
+<style></style>

@@ -1,63 +1,27 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import SkillTableCell from "./SkillTableCell.vue";
+import toDoubleDimensionArray from '../utils/data-to-arrays'
 
-const props = defineProps({
-    items: {
-        type: Array,
-        default: () => []
-    },
-    header: String
-}
-);
+//TO-DO: MOVE THIS IMPORT IN RESUMEVIEW
+import resume from "../assets/resume_eng.json";
 
-const skillTableColumns = computed(() => {
+// const props = defineProps({
+//     skills: 
+//   }
+// );
 
-    const tableCell = []
-    for (let i = 0; i < props.items.length; i += 2) {
-        tableCell.push([props.items[i], props.items[i + 1]])
-    }
-    return tableCell
-
-    // return props.items?.reduce((accumulator, currentValue, currentIndex, array) => {
-    //     if (currentIndex % 2 === 0) {
-    //         return [accumulator, [currentValue, array[currentIndex + 1]]]
-    //     }
-    //     return accumulator;
-    // }, [])
-})
-console.log("skilltablecell length: " + skillTableColumns.value.length);
-console.log("skilltablecell: " + skillTableColumns.value);
+console.log(resume);
+const experiencesArray = toDoubleDimensionArray(resume.experiences);
 </script>
 
 <template>
-    <v-card class="d-inline-flex" variant="tonal">
-        <v-table density="compact">
-            <thead>
-                <tr>
-                    <th class="text-center">{{ header }}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <div class="container" v-if="skillTableColumns.length">
-                    <div class="col" v-for="column in skillTableColumns">
-                        <div v-for="item in column"> {{ item }}</div>
-                    </div>
-                </div>
-            </tbody>
-        </v-table>
-    </v-card>
+  <v-container class="timeline" fluid>
+    <v-row justify="center" class="mb-10">
+      <SkillTableCell class="mr-5" header="Here are the languages that I have worked with:" :items="resume.languages" />
+      <SkillTableCell header="I have my way around with a few tools:" :items="resume.tools" />
+    </v-row>
+  </v-container>
 </template>
 
-<style>
-.container {
-    display: flex;
-}
-
-.col {
-    margin: 10px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+<style scoped>
 </style>
