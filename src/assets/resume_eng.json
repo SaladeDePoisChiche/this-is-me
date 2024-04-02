@@ -5,28 +5,40 @@
             "endDate":"Aujourd'hui",
             "company":"BNP Paribas | Millénaire 4, Rosa Parks",
             "title":"Fullstack JAVA/Angular Developer",
-            "description":"pour l'instant pas de description"
+            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "description": [
+                "Correction des bug remontés", "Amélioration et développement des évolutions"
+            ]
         },
         {
             "startDate":"01-09-2021",
             "endDate":"01-05-2022",
             "company":"ACENSI | La Défense",
             "title":"Fullstack JAVA/Angular Developer",
-            "description":"pour l'instant pas de description"
+            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "description": [
+                "Correction des bug remontés", "Amélioration et développement des évolutions"
+            ]
         },
         {
             "startDate":"2019",
             "endDate":"01-09-2021",
             "company":"Axileo | La Défense",
             "title":"Project Manager at Groupama Support and Service / BA and Product Owner at Engie Solution",
-            "description":"pour l'instant pas de description"
+            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "description": [
+                "Correction des bug remontés", "Amélioration et développement des évolutions"
+            ]
         },
         {
             "startDate":"2015",
             "endDate":"2019",
             "company":"Epitech",
             "title": "Expert en Technologie de l’Information",
-            "description":"pour l'instant pas de description"
+            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "description": [
+                "Correction des bug remontés", "Amélioration et développement des évolutions"
+            ]
         }
     ],
     "languages":[
