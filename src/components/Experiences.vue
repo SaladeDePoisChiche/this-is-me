@@ -36,7 +36,7 @@ const experiencesArray = toDoubleDimensionArray(resume.experiences);
   }
 
   .rightColumn {
-    padding-top: 10em;
+    padding-top: 15em;
   }
 
 }

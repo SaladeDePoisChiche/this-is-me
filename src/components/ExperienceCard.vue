@@ -54,7 +54,8 @@ const props = defineProps({
   }
 
 .card{
-    padding-bottom: 15em;
+    height: 30em;
+
 }
 
 .card-l{
