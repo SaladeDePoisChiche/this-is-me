@@ -15,7 +15,7 @@
       </v-col>
       <v-col cols="4">
         <v-sheet class="d-flex justify-center">
-          <v-img id="rounded-card" :width="500" aspect-ratio="16/9" cover src="homeview_profile.jpg"></v-img>
+          <v-img class="rounded-card" :width="500" aspect-ratio="16/9" cover src="homeview_profile.jpg"></v-img>
         </v-sheet>
       </v-col>
       <v-col cols="12" class="d-flex justify-center mt-5">
@@ -38,7 +38,7 @@
 </template>
 
 <style>
-#rounded-card {
+.rounded-card {
   border-radius: 50%;
 }
 </style>

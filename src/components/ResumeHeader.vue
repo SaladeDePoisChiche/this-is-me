@@ -1,7 +1,7 @@
 <template>
   <v-container class="timeline" fluid>
     <v-row class="pr-11" justify="center">
-      <div class="mb-3 mt-5 font-weight-light">
+      <div class="mt-5 catch-phrase-spacing font-weight-light">
         I suppose you are curious to know me better professionally! In a nutshell :
       </div>
     </v-row>
@@ -17,4 +17,8 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.catch-phrase-spacing {
+margin-left: -19.5em;
+}
+</style>

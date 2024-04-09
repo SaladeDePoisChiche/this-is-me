@@ -17,7 +17,7 @@ console.log("skilltablecell: " + skillTableColumns.values);
 </script>
 
 <template>
-    <v-card class="d-inline-flex" variant="tonal">
+    <v-card :color="'#d1896f'" class="d-inline-flex" variant="tonal">
         <v-table density="compact">
             <thead>
                 <tr>
