@@ -1,11 +1,12 @@
 <template>
-    <div cols="auto" class="title " :class="{'title-left' : isSideLeft, 'title-right' : !isSideLeft}">
+    <div cols="auto" class="title" :class="{'title-left' : isSideLeft, 'title-right' : !isSideLeft}">
         <v-container class="card" :class="{'card-l': isSideLeft, 'card-r': !isSideLeft}">
             <v-row>
                 <v-col>
-                    <h1 class="text-h4">{{ experience.title }}</h1>
-                    <p :class="{'leftParagraph' : isSideLeft, 'rightParagraph' : !isSideLeft}" class="font-weight-light"> {{ experience.environnement }}</p>
-                    <li v-for="desc in experience.description">{{ desc }}</li>
+                    <h2 class="text-h5"> {{ experience.startDate }} - {{ experience.endDate }} | {{ experience.company }}</h2>
+                    <h1 class="text-h1 title-text">{{ experience.title }}</h1>
+                    <p :class="{'leftParagraph' : isSideLeft}" class="text-h6"> {{ experience.environnement }}</p>
+                    <div class="font-weight-light text-body-1" v-for="desc in experience.description">{{ desc }}</div>
                 </v-col>
             </v-row>
         </v-container>
@@ -13,7 +14,6 @@
 </template>
 
 <script setup lang="ts">
-//TO DO : MAKE LEFT RIGHT ENUM
 const props = defineProps({
     experience: {
         type: Object,
@@ -23,11 +23,11 @@ const props = defineProps({
         type: Boolean
     }
 }
-);
+); //#e8a187;
 </script>
 
 <style scoped>
-.title {
+.title{
     color:#414042;
 }
 .title::before {
@@ -39,6 +39,10 @@ const props = defineProps({
     background-color: #323b4c;
 }
 
+.title-text {
+font-size: 3.5em !important;
+color:#faa484;
+}
 .title-left::before {
     float: right;
     margin-top: 2em;
@@ -54,7 +58,7 @@ const props = defineProps({
   }
 
 .card{
-    height: 30em;
+    height: 60em;
 
 }
 
@@ -66,7 +70,5 @@ const props = defineProps({
     padding-right: 5em;
 }
 
-.rightParagraph {
-    margin-left: 0.5em;
-  }
+
 </style>

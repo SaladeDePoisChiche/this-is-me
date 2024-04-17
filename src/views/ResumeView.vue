@@ -3,6 +3,7 @@ import SkillTable from '../components/SkillTable.vue';
 import Experiences from '../components/Experiences.vue';
 import ResumeHeader from '../components/ResumeHeader.vue';
 import TopNavigationBar from '../components/TopNavigationBar.vue';
+import resume from "../assets/resume_fr.json";
 </script>
 
 <template>
@@ -12,8 +13,8 @@ import TopNavigationBar from '../components/TopNavigationBar.vue';
     </v-container>
     <v-btn href="resume.pdf" target="_blank" class="set_pop">Hey ! Would you like to download my resume ?</v-btn>
     <ResumeHeader />
-    <SkillTable />
-    <Experiences />
+    <SkillTable :languages="resume.languages" :tools="resume.tools"/>
+    <Experiences :experiences="resume.experiences"/>
 </template>
 
 <style>

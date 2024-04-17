@@ -2,47 +2,45 @@
     "experiences": [
         {
             "startDate":"01-05-2022",
-            "endDate":"Aujourd'hui",
+            "endDate":"Today",
             "company":"BNP Paribas | Millénaire 4, Rosa Parks",
             "title":"Fullstack JAVA/Angular Developer",
             "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
             "description": [
-                "Correction des bug remontés", "Amélioration et développement des évolutions"
+                "Correction des bug remontés", "Amélioration et développement des évolutions", "Analyse et chiffrage du besoin du client",
+                "Mise en place et amélioration des API WEB"
             ]
         },
         {
             "startDate":"01-09-2021",
             "endDate":"01-05-2022",
             "company":"ACENSI | La Défense",
-            "title":"Fullstack JAVA/Angular Developer",
-            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "title":"Développeuse Fullstack JAVA/Angular",
+            "environnement":"1 Application, java 11, Springboot, Angular, Bootstrap, PostgreSQL, Gitlab",
             "description": [
-                "Correction des bug remontés", "Amélioration et développement des évolutions"
+                "Conception et développement de nouvelles fonctionnalités", "Correction des bugs en environnement de run", "APIsation de modules existants",
+                "Mise en place et amélioration des API WEB"
             ]
         },
         {
             "startDate":"2019",
             "endDate":"01-09-2021",
             "company":"Axileo | La Défense",
-            "title":"Project Manager at Groupama Support and Service / BA and Product Owner at Engie Solution",
-            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "title":"Cheffe de projet chez Groupama Support et Service / BA et Product Owner chez Engie Solution",
             "description": [
-                "Correction des bug remontés", "Amélioration et développement des évolutions"
+                "Pilotage et suivi des évolutions et des corrections", "Coordination des développeurs", "Animation des réunions scrum",
+                "Rédaction du cahier de recette, réalisation de la recette", "Rédaction des specifications fonctionnelles/techniques"
             ]
         },
         {
             "startDate":"2015",
             "endDate":"2019",
             "company":"Epitech",
-            "title": "Expert en Technologie de l’Information",
-            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
-            "description": [
-                "Correction des bug remontés", "Amélioration et développement des évolutions"
-            ]
+            "title": "Expert en Technologie de l’Information"
         }
     ],
     "languages":[
-        "Java", "C++", "Angular", "Vue"
+        "Java", "C++", "Angular", "Vue 3", "Typescript", "SQL"
     ],
-    "tools":["Spring", "Bootstrap", "Jenkins", "Gitlab CI/CD", "Kubernetes"]
+    "tools":["Spring", "Bootstrap", "Jenkins", "Gitlab CI/CD", "Kubernetes", "MySQL/PostgreSQL"]
 }

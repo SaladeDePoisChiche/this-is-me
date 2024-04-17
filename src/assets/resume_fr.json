@@ -1,36 +1,47 @@
 {
     "experiences": [
         {
-            "startDate":"01-05-2022",
+            "startDate":"Mai 2022",
             "endDate":"Aujourd'hui",
-            "company":"BNP Paribas | Millénaire 4, Rosa Parks",
+            "company":"BNP Paribas",
             "title":"Développeuse Fullstack JAVA/Angular",
-            "description":"pour l'instant pas de description"
+            "environnement":"4-5 Applications, java 8-17, Springboot, Angular, PL/SQL, Kubernetes, Jenkins, Scrum, Gitlab",
+            "description": [
+                "Correction des bug remontés", "Amélioration et développement des évolutions", "Analyse et chiffrage du besoin du client",
+                "Mise en place et amélioration des API WEB"
+            ]
         },
         {
-            "startDate":"01-09-2021",
-            "endDate":"01-05-2022",
-            "company":"ACENSI | La Défense",
+            "startDate":"Septembre 2021",
+            "endDate":"Mai 2022",
+            "company":"ACENSI",
             "title":"Développeuse Fullstack JAVA/Angular",
-            "description":"pour l'instant pas de description"
+            "environnement":"1 Application, java 11, Springboot, Angular, Bootstrap, PostgreSQL, Gitlab",
+            "description": [
+                "Conception et développement de nouvelles fonctionnalités", "Correction des bugs en environnement de run", "APIsation de modules existants",
+                "Mise en place et amélioration des API WEB"
+            ]
         },
         {
             "startDate":"2019",
-            "endDate":"01-09-2021",
-            "company":"Axileo | La Défense",
-            "title":"Cheffe de projet chez Groupama Support et Service / BA et Product Owner chez Engie Solution",
-            "description":"pour l'instant pas de description"
+            "endDate":"Septembre 2021",
+            "company":"G2S et Engie Solution",
+            "title":"Cheffe de projet, BA et Product Owner",
+            "environnement":"J'ai fait un petit détour du côté fonctionnel avant d'être développeuse",
+            "description": [
+                "Pilotage et suivi des évolutions et des corrections", "Coordination des développeurs", "Animation des réunions scrum",
+                "Rédaction du cahier de recette, réalisation de la recette", "Rédaction des spécifications fonctionnelles/techniques"
+            ]
         },
         {
             "startDate":"2015",
             "endDate":"2019",
-            "company":"Epitech",
-            "title": "Expert en Technologie de l’Information",
-            "description":"pour l'instant pas de description"
+            "company":"Epitech | Nantes et Paris",
+            "title": "Expert en Technologie de l’Information"
         }
     ],
     "languages":[
-        "Java", "C++", "Angular", "Vue"
+        "Java", "C++", "Angular", "Vue 3", "Typescript", "SQL"
     ],
-    "tools":["Spring", "Bootstrap", "Jenkins", "Gitlab CI/CD", "Kubernetes"]
+    "tools":["Spring", "Bootstrap", "Jenkins", "Gitlab CI/CD", "Kubernetes", "MySQL/PostgreSQL"]
 }

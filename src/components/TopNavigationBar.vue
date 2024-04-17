@@ -1,26 +1,10 @@
 <script setup lang="ts">
-import { PropType } from 'vue';
-import MenuId from '../utils/MenuId.vue';
 
-
-//variable => enum is ID
-// btn with this ID is highlited
-// const props = defineProps({
-//   currentTab: {
-//     type: String as PropType<MenuId>,
-//     required: true
-//   },
-// }
-// );
-console.log("current Tab");
-// console.log(props.currentTab);
 </script>
 
 <template>
   <v-container class="pt-0">
     <v-col cols="12" class="d-flex justify-center">
-      <!-- TO DO : MAKE URL BASE DYNAMIC -->
-      <!-- :class="{ 'btn-selected': currentTab == MenuId.resume }" -->
       <v-btn href="/" variant="text">
         <font-awesome-icon :icon="['fas', 'house']" />
       </v-btn>
@@ -39,7 +23,4 @@ console.log("current Tab");
 </template>
 
 <style scoped>
-.btn-selected {
-  color: red
-}
 </style>

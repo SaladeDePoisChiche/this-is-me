@@ -1,12 +1,16 @@
 <script setup lang="ts">
-//TO-DO: MOVE THIS IMPORT IN RESUMEVIEW
-import resume from "../assets/resume_eng.json";
+
 
 import toDoubleDimensionArray from '../utils/data-to-arrays'
 import ExperienceCard from "./ExperienceCard.vue";
 
-console.log(resume);
-const experiencesArray = toDoubleDimensionArray(resume.experiences);
+const props = defineProps({
+    experiences: {
+      type: Array,
+    },
+  }
+);
+const experiencesArray = toDoubleDimensionArray(props.experiences);
 </script>
 
 <template>
@@ -36,7 +40,7 @@ const experiencesArray = toDoubleDimensionArray(resume.experiences);
   }
 
   .rightColumn {
-    padding-top: 15em;
+    padding-top: 30em;
   }
 
 }

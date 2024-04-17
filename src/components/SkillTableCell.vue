@@ -12,8 +12,6 @@ const props = defineProps({
 
 const skillTableColumns = toDoubleDimensionArray(props.items);
 
-console.log("skilltablecell length: " + skillTableColumns.length);
-console.log("skilltablecell: " + skillTableColumns.values);
 </script>
 
 <template>
