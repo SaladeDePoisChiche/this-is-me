@@ -1,21 +1,48 @@
 <script setup lang="ts">
+import toDoubleDimensionArray from '../utils/data-to-arrays'
+
 const props = defineProps({
-    items: Array
+    items: {
+        type: Array,
+        default: () => []
+    },
+    header: String
 }
 );
+
+const skillTableColumns = toDoubleDimensionArray(props.items);
 
 </script>
 
 <template>
-    <v-card class="d-inline-flex" variant="tonal">
+    <v-card :color="'#d1896f'" class="d-inline-flex" variant="tonal">
         <v-table density="compact">
-            <tbody>
-                <tr class="text-center" v-for="item in items">
-                    {{ item }}
+            <thead>
+                <tr>
+                    <th class="text-center">{{ header }}</th>
                 </tr>
+            </thead>
+            <tbody>
+                <div class="container" v-if="skillTableColumns.length">
+                    <div class="col" v-for="column in skillTableColumns">
+                        <div v-for="item in column"> {{ item }}</div>
+                    </div>
+                </div>
             </tbody>
         </v-table>
     </v-card>
 </template>
 
-<style></style>
+<style>
+.container {
+    display: flex;
+}
+
+.col {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+</style>

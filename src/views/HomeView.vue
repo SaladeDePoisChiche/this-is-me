@@ -15,12 +15,12 @@
       </v-col>
       <v-col cols="4">
         <v-sheet class="d-flex justify-center">
-          <v-img id="rounded-card" :width="500" aspect-ratio="16/9" cover src="homeview_profile.jpg"></v-img>
+          <v-img class="rounded-card" :width="500" aspect-ratio="16/9" cover src="homeview_profile.jpg"></v-img>
         </v-sheet>
       </v-col>
       <v-col cols="12" class="d-flex justify-center mt-5">
         <!-- TO DO : MAKE URL BASE DYNAMIC -->
-        <v-btn class="mb-8" href="resume.pdf" target="_blank" variant="text">Resume</v-btn>
+        <v-btn class="mb-8" to="/resume" variant="text">Resume</v-btn>
         <v-btn href="https://www.linkedin.com/in/soledad-cot/" target="_blank" variant="text">Linkedin</v-btn>
         <v-btn href="https://github.com/SaladeDePoisChiche" target="_blank" variant="text">Github</v-btn>
         <v-btn variant="text">
@@ -38,7 +38,7 @@
 </template>
 
 <style>
-#rounded-card {
+.rounded-card {
   border-radius: 50%;
 }
 </style>

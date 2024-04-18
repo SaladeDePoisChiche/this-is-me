@@ -1,14 +1,22 @@
 {
-  "files": [],
   "references": [
     {
       "path": "./tsconfig.node.json"
     },
     {
-      "path": "./tsconfig.app.json"
-    },
-    {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.json"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+  },
 }
