@@ -5,7 +5,7 @@
 <template>
   <div id="app">
     <v-app>
-      <RouterView />
+      <router-view />
     </v-app>
   </div>
 </template>
