@@ -3,7 +3,7 @@ import SkillTable from '../components/SkillTable.vue';
 import Experiences from '../components/Experiences.vue';
 import ResumeHeader from '../components/ResumeHeader.vue';
 import TopNavigationBar from '../components/TopNavigationBar.vue';
-import resume from "../assets/resume_fr.json";
+import resume from "../assets/resume_eng.json";
 </script>
 
 <template>
