@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import isMobile from '../utils/detect-mobile'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -7,7 +8,10 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      beforeEnter: (to, from, next) => {
+        mobileRedirection(next);
+      }
     },
     {
       path: '/resume',
@@ -24,8 +28,20 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/PersonalView.vue')
+    },
+    {
+      path: '/m', 
+      name: 'mobile-home',
+      component:() => import('../views/HomeViewMobile.vue'),
     }
   ]
 })
 
-export default router
+export default router;
+
+function mobileRedirection(next): void {
+  if (isMobile())
+    next('/m')
+  else
+    next();
+}
