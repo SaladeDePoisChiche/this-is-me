@@ -11,7 +11,7 @@ import resume from "../assets/resume_eng.json";
     <v-container class="img-size justify-center">
         <v-img class="rounded-card" aspect-ratio="1/1" cover  src="resumeview_profile.jpeg"></v-img>
     </v-container>
-    <v-btn href="resume.pdf" target="_blank" class="set_pop">Hey ! Would you like to download my resume ?</v-btn>
+    <v-btn href="resume.pdf" target="_blank" class="set_pop">Hey! Would you like to download my resume?</v-btn>
     <ResumeHeader />
     <SkillTable :languages="resume.languages" :tools="resume.tools"/>
     <Experiences :experiences="resume.experiences"/>
